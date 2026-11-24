@@ -26,6 +26,6 @@
     "esbuild": "^0.25.0",
     "typescript": "^5.9.0",
     "vite": "^7.1.0",
-    "wrangler": "^4.40.0"
+    "wrangler": "^4.168.0"
   }
 }
