@@ -1,0 +1,29 @@
+name = "biblioteca-musculacao"
+main = "dist/server/index.js"
+compatibility_date = "2026-10-22"
+workers_dev = true
+
+[vars]
+SEO_INDEXING_ENABLED = "false"
+ANALYTICS_ENABLED = "false"
+PAYMENTS_ENABLED = "false"
+BUNNY_SECURITY_CONFIRMED = "false"
+MERCADO_PAGO_LIVE_MODE = "false"
+# Set APP_ORIGIN to the exact HTTPS origin in the deployment environment.
+# Add secrets with npx wrangler secret put NAME; never use VITE_ for privileged keys.
+
+[triggers]
+crons = ["15,45 * * * *"]
+
+[observability]
+enabled = true
+head_sampling_rate = 0.1
+
+[env.staging]
+name = "biblioteca-musculacao-staging"
+[env.staging.vars]
+SEO_INDEXING_ENABLED = "false"
+ANALYTICS_ENABLED = "false"
+PAYMENTS_ENABLED = "false"
+BUNNY_SECURITY_CONFIRMED = "false"
+MERCADO_PAGO_LIVE_MODE = "false"

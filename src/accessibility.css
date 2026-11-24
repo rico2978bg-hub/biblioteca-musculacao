@@ -1,0 +1,93 @@
+.sr-only,.sr-only-input{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
+.sidebar{outline:none}.sidebar-close,.mobile-wordmark{display:none}
+.button{max-width:100%;white-space:normal;text-align:center;line-height:1.45;min-height:44px}
+.button svg{flex-shrink:0}
+.hero-content{min-width:0}.hero h1{overflow-wrap:anywhere;max-width:100%}
+.hero-meta{flex-wrap:wrap;row-gap:9px}.hero-meta span{max-width:100%}
+.hero-stamp{padding:18px 20px;background:#111214c2;border:1px solid #ffffff26;border-radius:9px;backdrop-filter:blur(4px)}
+.hero-stamp small,.hero-stamp>span:last-child{color:#f0f2f5}
+:root[data-theme=light] .hero-stamp{background:#14283edb}
+.level-number{font-size:24px;line-height:1;top:12px;right:12px;opacity:1;color:var(--muted)}
+:root[data-theme=light] .level-number{font-size:24px;line-height:1;top:12px;right:12px;opacity:1;color:#516b87}
+.searchbox:focus-within{outline:2px solid var(--accent);outline-offset:3px;box-shadow:0 0 0 4px var(--bg)}
+.searchbox button{min-width:32px;min-height:32px;align-items:center;justify-content:center;flex-shrink:0}
+.filter-button{min-height:44px;min-width:44px;justify-content:center}
+.muscle-tabs button{min-height:44px}
+.modal-close{width:44px;height:44px}
+.modal:focus-visible{outline:2px solid var(--accent);outline-offset:-4px}
+.text-button{min-height:36px;line-height:1.6;white-space:normal}
+footer a{min-height:36px;display:inline-flex;align-items:center}
+.social-row button{min-height:40px;min-width:40px}
+.upload-control{position:relative;min-height:44px;padding:8px;display:inline-flex;align-items:center;gap:8px}
+.upload-control:focus-within{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.admin-table button{min-height:36px}.admin-form h2{margin:0;font-size:18px}
+.checkbox-label{min-height:32px;padding:6px 0}
+.checkbox-label input[type=checkbox]{width:20px;min-width:20px;height:20px;min-height:20px;padding:0;flex-shrink:0}
+.form-error:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.mfa-manual input{width:100%;min-width:0;padding:12px;font-size:16px;color:var(--text);background:var(--surface);border:1px solid var(--muted);border-radius:5px}
+.member-orders h2{font-size:15px;margin:0 0 14px}
+.payment-status button[aria-disabled=true]{opacity:.65;cursor:wait}
+.admin-table-wrap:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.mfa-manual{padding:16px;border:1px solid var(--line);border-radius:7px;max-width:100%;overflow-wrap:anywhere}
+.mfa-manual code{display:block;font-family:monospace;margin:10px 0;font-size:16px;user-select:all}
+.auth-body input:not([type=checkbox]),.admin-form input,.admin-form textarea,.admin-form select,.advanced-filters select{border-color:#747984}
+:root[data-theme=light] .auth-body input:not([type=checkbox]),:root[data-theme=light] .admin-form input,:root[data-theme=light] .admin-form textarea,:root[data-theme=light] .admin-form select,:root[data-theme=light] .advanced-filters select{border-color:#718397}
+.empty-state h2{color:var(--text);font-size:19px;margin:18px 0 8px}
+:root[data-theme=light] .empty-state h2{font-size:20px;letter-spacing:-.3px}
+.info-cards h2{font-size:15px;margin:0 0 12px}.account-card h2{font-size:16px;margin:0 0 5px;color:var(--text)}
+.bottom-banner h2{font-size:16px;font-weight:600;margin:6px 0 0;letter-spacing:-.3px}
+:root[data-theme=light] .bottom-banner h2{font-size:17px;color:#1b3c5e}
+.auth-body h2{padding-right:25px}
+.content-page p,.empty-state p{overflow-wrap:anywhere}
+.player-area.is-locked{aspect-ratio:auto;min-height:280px}
+.player-area.is-locked .player-lock{position:relative;inset:auto;min-height:280px;z-index:1}
+.player-lock p{font-size:13px;line-height:1.7}
+.player-lock small{font-size:11px;line-height:1.6}
+.player-lock .button{min-height:44px;font-size:13px;max-width:100%}
+.related-list>button>span{min-width:0;overflow-wrap:anywhere}
+@media(max-width:960px){
+  :root:not([data-theme=light]) .hero-shade{background:linear-gradient(90deg,#111214f5,#111214dd 45%,#111214b8),linear-gradient(0deg,#11121466,transparent 50%)}
+}
+@media(min-width:761px) and (max-width:960px){
+  :root[data-theme=light] .hero-shade{background:linear-gradient(90deg,#f7fafef2 1%,#f7fafee6 45%,#f7fafed6),linear-gradient(0deg,#f7fafe66,transparent 45%)}
+}
+@media(max-width:760px){
+  .sidebar{visibility:hidden;transition:transform .2s,visibility .2s}
+  .sidebar.mobile-open{visibility:visible}
+  .sidebar-close{display:grid;position:absolute;top:12px;right:10px;width:44px;height:44px;background:var(--surface);border:1px solid var(--line);z-index:2}
+  .sidebar.mobile-open .brand-visual{margin-top:27px}
+  .sidebar nav .nav-item{min-height:44px}
+  .topbar,:root[data-theme=light] .topbar{height:auto;min-height:116px;padding:10px 14px;display:grid;grid-template-columns:44px minmax(0,1fr) auto;grid-template-rows:44px 44px;gap:8px}
+  .mobile-toggle{grid-column:1;grid-row:1;width:44px;height:44px;align-items:center;justify-content:center}
+  .mobile-wordmark{display:block;grid-column:2;grid-row:1;min-width:0;color:var(--text);font-family:'Barlow Condensed',Impact,sans-serif;font-size:15px;line-height:1.1;letter-spacing:1px;text-transform:uppercase}
+  .mobile-wordmark strong{display:block;font-size:16px}
+  .top-actions,:root[data-theme=light] .top-actions{grid-column:3;grid-row:1;gap:6px}
+  .top-actions .theme-toggle,.top-actions .avatar,:root[data-theme=light] .top-actions .avatar{display:grid;width:44px;height:44px;padding:10px;min-width:44px}
+  .searchbox,:root[data-theme=light] .searchbox{grid-column:1/-1;grid-row:2;max-width:none;width:100%;height:44px;min-width:0;padding:0 12px}
+  .searchbox input,:root[data-theme=light] .searchbox input{font-size:16px;line-height:1.5}
+  .hero,:root[data-theme=light] .hero{height:auto;min-height:375px}
+  .hero-content,:root[data-theme=light] .hero-content{padding:30px 22px 32px}
+  .hero h1,:root[data-theme=light] .hero h1{font-size:clamp(40px,13vw,59px);line-height:1.02}
+  .hero-number{display:none}
+  .hero .eyebrow,.hero-meta,:root[data-theme=light] .hero-meta{font-size:11px;line-height:1.6}
+  .hero p,:root[data-theme=light] .hero p{font-size:13px;line-height:1.75}
+  .hero-meta{column-gap:9px}.hero-meta i{display:none}
+  .hero .button{font-size:13px;min-height:44px}
+  .library-section{scroll-margin-top:138px}
+  .level-card small,:root[data-theme=light] .level-card small{font-size:11px;line-height:1.5}
+  .level-card strong,:root[data-theme=light] .level-card strong{font-size:12px;line-height:1.45}
+  .level-card{height:auto;min-height:130px}
+  .section-heading{flex-wrap:wrap}
+  .library-count{font-size:11px;line-height:1.6}
+  .auth-body input:not([type=checkbox]),.admin-form input,.admin-form textarea,.admin-form select,.advanced-filters select,:root[data-theme=light] .auth-body input:not([type=checkbox]),:root[data-theme=light] .admin-form input,:root[data-theme=light] .admin-form textarea,:root[data-theme=light] .admin-form select,:root[data-theme=light] .advanced-filters select{font-size:16px;line-height:1.5}
+  footer>div:last-child{gap:8px 18px}footer a{min-height:44px}
+  .text-button{min-height:44px}
+  .toast{max-height:calc(100dvh - 32px);overflow:auto}.toast button{min-width:36px;min-height:36px;align-items:center;justify-content:center}
+  .empty-state h2,:root[data-theme=light] .empty-state h2{font-size:18px;line-height:1.5}
+  .bottom-banner h2,:root[data-theme=light] .bottom-banner h2{font-size:15px;line-height:1.5}
+  .advanced-filters select{max-width:100%}
+  .checkbox-label{min-height:44px}
+  .admin-table input{font-size:16px;min-height:44px;max-width:100%}
+}
+@media(max-height:500px) and (max-width:760px){.topbar{position:relative}}
+@media(forced-colors:active){button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.searchbox:focus-within,.upload-control:focus-within{outline:2px solid Highlight}.nav-item.active,.muscle-tabs button.selected,.admin-tabs button.active{border:2px solid Highlight}}

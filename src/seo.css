@@ -1,0 +1,12 @@
+a.brand,a.nav-item,a.level-card,a.button,a.text-button,.sidebar-note a,footer a{text-decoration:none}
+a.level-card{color:var(--text)}
+.sidebar-note a{font-size:11px;font-weight:700;display:flex;gap:20px;align-items:center;color:var(--accent)}
+footer a{font-size:10px;color:var(--muted);padding:4px 0}
+footer a:hover{color:var(--accent)}
+.section-heading h1{font-size:24px;letter-spacing:-.8px;font-weight:650;margin:0}
+:root[data-theme=light] .section-heading h1{font-size:27px}
+.cookie-preferences{display:block;margin:0 38px 20px}
+.cookie-banner{position:fixed;bottom:20px;right:20px;z-index:110;max-width:460px;padding:24px;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
+.cookie-banner h2{font-size:18px;margin:0 0 12px}.cookie-banner p{font-size:13px;color:var(--muted)}.cookie-banner>div{display:flex;gap:10px;flex-wrap:wrap}.cookie-banner .button{font-size:12px}
+.not-found .text-button{margin-left:14px}
+@media(max-width:760px){.section-heading h1,:root[data-theme=light] .section-heading h1{font-size:24px;line-height:1.2}.cookie-banner{left:14px;right:14px;bottom:14px;padding:20px}.cookie-preferences{margin-left:18px}.not-found .text-button{margin-left:0;display:block;margin-top:15px}footer a{font-size:10px}}

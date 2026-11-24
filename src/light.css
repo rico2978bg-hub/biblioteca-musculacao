@@ -1,0 +1,204 @@
+/* The light palette keeps the silver mark on navy and gives the content a bright,
+   readable surface. These rules deliberately leave the dark composition intact. */
+:root[data-theme=light]{
+  color-scheme:light;
+  --bg:#f0f4f8;
+  --surface:#fff;
+  --raised:#e7eef6;
+  --sidebar:#10243c;
+  --line:#d6e1ed;
+  --text:#152d49;
+  --muted:#50647b;
+  --accent:#214f7e;
+  --accent-hover:#153d65;
+  --soft:#274f76;
+  --shadow:0 16px 50px #18355315;
+  --header:#fffffff5;
+}
+
+:root[data-theme=light] .sidebar{
+  --text:#f1f5fc;
+  --muted:#bccce0;
+  --line:#dceaff24;
+  --surface:#1a334f;
+  --raised:#24425f;
+  --accent:#d7e8ff;
+  --accent-hover:#fff;
+  color:var(--text);
+  border-right:0;
+  background:linear-gradient(170deg,#122a46,#0e2036 80%);
+  background-color:#10243c;
+  scrollbar-color:#4c617a transparent;
+}
+:root[data-theme=light] .brand-visual{mix-blend-mode:screen}
+:root[data-theme=light] .brand-visual>img{filter:none}
+:root[data-theme=light] .brand-dot{color:#ff916c}
+:root[data-theme=light] .sidebar-label{color:#b4c6dc;font-size:10px;letter-spacing:1.4px}
+:root[data-theme=light] .nav-item{color:#c3d2e5;font-size:12px;min-height:45px}
+:root[data-theme=light] .nav-item:hover{background:#ffffff0d;color:#fff}
+:root[data-theme=light] .nav-item.active{background:#d6e9ff17;color:#fff;box-shadow:inset 0 0 0 1px #c5dfff17}
+:root[data-theme=light] .nav-item.active:after{background:#9fc8f6}
+:root[data-theme=light] .nav-item.active svg{color:#a6d0ff}
+:root[data-theme=light] .sidebar-note{background:linear-gradient(135deg,#223d5c,#192f49);background-color:#1a334f;box-shadow:0 8px 24px #0000000d}
+:root[data-theme=light] .sidebar-note p{color:#c3d2e5}
+:root[data-theme=light] .sidebar-note button{color:#d8e9ff;font-size:11px}
+:root[data-theme=light] .social-row button:hover{background:#ffffff0d;border-radius:5px;color:#fff}
+:root[data-theme=light] .social-row span{color:#b4c6dc;font-size:9px;line-height:1.6}
+
+:root[data-theme=light] .topbar{box-shadow:0 2px 14px #1b395005}
+:root[data-theme=light] .searchbox{height:44px;border-color:#cfdce9;border-radius:9px;background:#f6f9fc;transition:border-color .18s,box-shadow .18s}
+:root[data-theme=light] .searchbox:focus-within{border-color:#356b9f;box-shadow:0 0 0 3px #356b9f22;background:#fff}
+:root[data-theme=light] .searchbox input{font-size:13px}
+:root[data-theme=light] .searchbox kbd{background:#fff;color:#526880;border-color:#d8e2ed;font-size:9px;padding:3px 6px}
+:root[data-theme=light] .teacher-label{font-size:11px}
+:root[data-theme=light] .avatar{background:#edf3f9;color:#2e5074}
+:root[data-theme=light] .theme-toggle{color:#365877}
+:root[data-theme=light] .skip-link{color:#fff}
+:root[data-theme=light] .button.primary{color:#fff;box-shadow:0 4px 12px #214f7e14}
+:root[data-theme=light] .button.secondary{background:#fff}
+
+:root[data-theme=light] .hero{
+  background:#f7fafe;
+  color:#142f4d;
+  border-color:#d3deeb;
+  box-shadow:0 8px 28px #1d385b0a;
+  border-radius:12px;
+}
+:root[data-theme=light] .hero-image{inset:0;width:100%;filter:grayscale(.8);opacity:.82;object-position:center 58%}
+:root[data-theme=light] .hero-shade{
+  background:linear-gradient(90deg,#f7fafef7 1%,#f7fafee8 25%,#f7fafeb3 45%,#f7fafe29 68%,#171a1f8f),linear-gradient(0deg,#171a1f38,transparent 45%);
+}
+:root[data-theme=light] .hero .eyebrow{color:#3f5e7c;font-size:10px;letter-spacing:1.9px}
+:root[data-theme=light] .hero .eyebrow>span{background:#2e6396}
+:root[data-theme=light] .hero h1{letter-spacing:.2px}
+:root[data-theme=light] .hero h1 em{color:#2a5f91}
+:root[data-theme=light] .hero p{color:#405c76;font-size:13px;line-height:1.8}
+:root[data-theme=light] .hero .button.primary{background:#214f7e;color:#fff;min-height:45px;font-size:12px;padding:13px 19px;box-shadow:0 6px 16px #214f7e22}
+:root[data-theme=light] .hero .button.primary:hover{background:#153d65}
+:root[data-theme=light] .hero-meta{color:#455e76;font-size:10px}
+:root[data-theme=light] .hero-meta svg{color:#365d7e}
+:root[data-theme=light] .hero-meta i{background:#6e8297}
+:root[data-theme=light] .hero-stamp{color:#fff;text-shadow:0 2px 12px #0b203c66}
+:root[data-theme=light] .hero-stamp small{color:#f0f5fc;font-size:9px}
+:root[data-theme=light] .hero-stamp>span:last-child{color:#e1ebf7;font-size:8px}
+:root[data-theme=light] .stamp-line{background:#b8d5f2}
+:root[data-theme=light] .hero-number{color:#e2edfb}
+:root[data-theme=light] .hero-number span{color:#dbe8f8}
+
+:root[data-theme=light] .level-grid{margin-top:20px;margin-bottom:30px;gap:16px}
+:root[data-theme=light] .level-card{border-color:#d4dfeb;border-radius:10px;box-shadow:0 3px 12px #14365405;min-height:98px;padding:20px 18px;gap:13px}
+:root[data-theme=light] .level-card:hover{border-color:#91abc7;box-shadow:0 7px 20px #1436540d}
+:root[data-theme=light] .level-icon{width:41px;height:41px;border-radius:9px;background:#e7f2ec;color:#286746}
+:root[data-theme=light] .blue .level-icon{background:#e9f0fa;color:#315d94}
+:root[data-theme=light] .orange .level-icon{background:#f8eee7;color:#a1552d}
+:root[data-theme=light] .level-card small{font-size:11px;color:#52677f}
+:root[data-theme=light] .level-card strong{font-size:14px;line-height:1.4}
+:root[data-theme=light] .level-arrow{color:#486683}
+:root[data-theme=light] .level-number{color:#33577c;opacity:.055}
+
+:root[data-theme=light] .library-section{padding:26px;border:1px solid #d6e1ed;border-radius:12px;background:#fff;box-shadow:0 5px 20px #19395405}
+:root[data-theme=light] .section-heading{margin-bottom:17px}
+:root[data-theme=light] .section-heading h2{font-size:27px;letter-spacing:-.8px}
+:root[data-theme=light] .section-kicker{font-size:10px;letter-spacing:1.5px;color:#506985}
+:root[data-theme=light] .library-count{font-size:11px}
+:root[data-theme=light] .demo-label,:root[data-theme=light] .demo-detail{font-size:11px;line-height:1.7;color:#52677f}
+:root[data-theme=light] .demo-label{flex-wrap:wrap}
+:root[data-theme=light] .status-dot{background:#ae6b22}
+:root[data-theme=light] .filter-toolbar{padding-bottom:18px;margin-bottom:21px}
+:root[data-theme=light] .muscle-tabs button{font-size:12px;padding:9px 13px;background:#f5f8fb;border-color:#d8e3ee;color:#3f5873;border-radius:6px}
+:root[data-theme=light] .muscle-tabs button.selected{background:#193c60;color:#fff;border-color:#193c60}
+:root[data-theme=light] .filter-button{font-size:12px;padding:9px 12px;color:#3f5873;border-radius:6px}
+:root[data-theme=light] .filter-button:hover,:root[data-theme=light] .filter-button.selected{background:#edf3fa;color:#214f7e;border-color:#9cb5ce}
+:root[data-theme=light] .advanced-filters label{font-size:12px}
+:root[data-theme=light] .advanced-filters select{background:#f7f9fc;font-size:12px}
+:root[data-theme=light] .empty-state{border:1px dashed #cbd9e8;border-radius:9px;min-height:265px;padding:39px 20px;background:linear-gradient(145deg,#f8fafc,#f0f5fa);color:#526b85}
+:root[data-theme=light] .empty-state>svg{color:#4a7298;background:#e7eef7;box-sizing:content-box;padding:14px;border-radius:15px;width:24px;height:24px}
+:root[data-theme=light] .empty-state h3{font-size:20px;letter-spacing:-.3px;margin-top:18px}
+:root[data-theme=light] .empty-state p{font-size:13px;line-height:1.8;max-width:520px;margin-bottom:4px}
+:root[data-theme=light] .video-title{font-size:14px}
+:root[data-theme=light] .video-category{font-size:10px}
+:root[data-theme=light] .video-teacher{font-size:10px}
+:root[data-theme=light] .bottom-banner{background:linear-gradient(110deg,#e4edf7,#f7faff);border-color:#cad9e9;border-radius:10px;padding:25px}
+:root[data-theme=light] .bottom-banner h3{font-size:17px;color:#1b3c5e}
+:root[data-theme=light] .bottom-banner>div>span{font-size:9px;color:#496783}
+:root[data-theme=light] .bottom-banner>button{font-size:12px}
+:root[data-theme=light] footer{border-color:#ccd9e7;padding-top:27px}
+:root[data-theme=light] .footer-brand,:root[data-theme=light] footer button{font-size:11px}
+:root[data-theme=light] .footer-brand span{font-size:10px}
+
+:root[data-theme=light] .account-card,:root[data-theme=light] .plan-card,:root[data-theme=light] .info-cards article,:root[data-theme=light] .admin-form,:root[data-theme=light] .admin-stats>div{box-shadow:0 5px 18px #19395407;border-radius:10px}
+:root[data-theme=light] .notice{background:#eaf1f8}
+:root[data-theme=light] .content-page p{font-size:14px}
+:root[data-theme=light] .admin-tabs button,:root[data-theme=light] .admin-table,:root[data-theme=light] .admin-form label,:root[data-theme=light] .auth-body label{font-size:12px}
+:root[data-theme=light] .admin-stats span,:root[data-theme=light] .admin-table th{font-size:11px}
+:root[data-theme=light] .admin-empty{background:#f8fafc;border-color:#bfcfe0}
+:root[data-theme=light] .modal-backdrop{background:#10253d99}
+:root[data-theme=light] .modal{background:#fff;border-color:#cddaea}
+:root[data-theme=light] .modal-close{background:#edf3f9;border-color:#cfdeed;color:#2d4c6c}
+:root[data-theme=light] .auth-body input:not([type=checkbox]),:root[data-theme=light] .admin-form input,:root[data-theme=light] .admin-form textarea,:root[data-theme=light] .admin-form select{background:#f6f9fc;border-color:#c9d8e7;font-size:13px}
+:root[data-theme=light] .form-error{color:#a32c20!important;background:#fff0ed;border-color:#eac0b8}
+:root[data-theme=light] .form-success{color:#1d6846!important;background:#edf8f1;border-color:#b4d9c4}
+:root[data-theme=light] .toast{background:#fff;border-color:#b9ccdf;color:#1d3f61}
+
+@media(max-width:1200px) and (min-width:761px){
+  :root[data-theme=light] .nav-item{font-size:11px}
+  :root[data-theme=light] .level-card{padding:17px 12px;gap:10px}
+  :root[data-theme=light] .level-card strong{font-size:12px}
+  :root[data-theme=light] .level-card small{font-size:10px}
+  :root[data-theme=light] .level-icon{width:34px;height:36px}
+}
+@media(max-width:960px){
+  :root[data-theme=light] .hero-shade{background:linear-gradient(90deg,#f7fafef2 1%,#f7fafecc 45%,#f7fafe99),linear-gradient(0deg,#f7fafe66,transparent 45%)}
+  :root[data-theme=light] .hero-number,:root[data-theme=light] .hero-number span{color:#3f5f7f}
+  :root[data-theme=light] .level-card{padding:14px 10px;gap:8px}
+  :root[data-theme=light] .level-card strong{font-size:11px}
+  :root[data-theme=light] .level-card small{font-size:10px}
+  :root[data-theme=light] .level-icon{width:28px;height:34px}
+  :root[data-theme=light] .library-section{padding:22px}
+  :root[data-theme=light] .section-heading h2{font-size:24px}
+}
+@media(max-width:760px){
+  :root[data-theme=light] .topbar{gap:11px;padding:0 16px}
+  :root[data-theme=light] .searchbox{height:39px;padding:0 9px;gap:7px}
+  :root[data-theme=light] .searchbox input{font-size:11px}
+  :root[data-theme=light] .top-actions{gap:8px}
+  :root[data-theme=light] .hero{border-radius:10px;height:auto;min-height:384px}
+  :root[data-theme=light] .hero-image{opacity:.7;object-position:62% center}
+  :root[data-theme=light] .hero-shade{background:linear-gradient(90deg,#f7fafef2 1%,#f7fafed9 45%,#f7fafebd),linear-gradient(0deg,#f7fafe99,transparent 60%)}
+  :root[data-theme=light] .hero .eyebrow{font-size:9px;letter-spacing:1.6px}
+  :root[data-theme=light] .hero p{font-size:12px}
+  :root[data-theme=light] .hero-meta{font-size:9px;gap:9px}
+  :root[data-theme=light] .hero-number{font-size:13px}
+  :root[data-theme=light] .level-grid{margin:14px 0 22px;gap:8px}
+  :root[data-theme=light] .level-card{min-height:124px;padding:13px 10px;gap:10px;border-radius:8px}
+  :root[data-theme=light] .level-icon{width:30px;height:30px;display:grid;place-items:center;border-radius:7px}
+  :root[data-theme=light] .level-card small{font-size:9px;line-height:1.4;margin-bottom:5px}
+  :root[data-theme=light] .level-card strong{font-size:11px;line-height:1.4}
+  :root[data-theme=light] .level-number{font-size:48px;top:8px;opacity:.07}
+  :root[data-theme=light] .library-section{padding:19px 15px;border-radius:10px}
+  :root[data-theme=light] .section-heading{align-items:flex-start;flex-wrap:wrap;gap:9px}
+  :root[data-theme=light] .section-heading h2{font-size:24px}
+  :root[data-theme=light] .section-kicker{font-size:9px;letter-spacing:1px;line-height:1.6}
+  :root[data-theme=light] .library-count{font-size:10px}
+  :root[data-theme=light] .demo-label,:root[data-theme=light] .demo-detail{font-size:10px}
+  :root[data-theme=light] .muscle-tabs button,:root[data-theme=light] .filter-button{font-size:11px;padding:9px 10px}
+  :root[data-theme=light] .empty-state{padding:30px 16px;min-height:275px}
+  :root[data-theme=light] .empty-state h3{font-size:18px;line-height:1.5}
+  :root[data-theme=light] .empty-state p{font-size:12px}
+  :root[data-theme=light] .bottom-banner{padding:21px 17px}
+  :root[data-theme=light] .bottom-banner h3{font-size:15px}
+  :root[data-theme=light] .bottom-banner>div>span{font-size:8px;line-height:1.6}
+  :root[data-theme=light] .bottom-banner>button{font-size:11px}
+  :root[data-theme=light] .footer-brand,:root[data-theme=light] footer button{font-size:10px}
+}
+/* Theme selection must remain reachable on the smallest supported phones. */
+.skip-link{top:0;left:12px;transform:translateY(-150%);white-space:nowrap}
+.skip-link:focus{top:10px;transform:translateY(0)}
+@media(max-width:380px){
+  .topbar .theme-toggle{display:grid}
+  :root[data-theme=light] .topbar{padding:0 12px;gap:9px}
+  :root[data-theme=light] .top-actions{gap:7px}
+  :root[data-theme=light] .avatar{width:29px;height:29px}
+  :root[data-theme=light] .hero-content{padding:29px 19px}
+  :root[data-theme=light] .hero h1{font-size:clamp(40px,14.1vw,51px)}
+}

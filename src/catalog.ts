@@ -1,0 +1,5 @@
+export type Video = { id:string; title:string; description:string; exercise:string; duration_seconds:number; level:string; muscles:string[]; categories:string[]; equipment:string[]; keywords:string[]; thumbnail_url:string; published?:boolean; status?:string };
+export const images = { logo: '/brand/logo.webp', gym: '/brand/academia-1600.webp', gymSmall: '/brand/academia-960.webp' };
+export const normalize=(value:string)=>value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('pt-BR');
+export function filterVideos(videos:Video[],query:string,filters:{level?:string;muscle?:string;category?:string;equipment?:string}) { const terms=normalize(query).split(/\s+/).filter(Boolean); return videos.filter(v=>terms.every(q=>normalize([v.title,v.exercise,v.description,...v.keywords,...v.muscles].join(' ')).includes(q))&&(!filters.level||v.level===filters.level)&&(!filters.muscle||v.muscles.includes(filters.muscle))&&(!filters.category||v.categories.includes(filters.category))&&(!filters.equipment||v.equipment.includes(filters.equipment))); }
+export const duration=(seconds:number)=>`${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`;
